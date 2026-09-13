@@ -1,11 +1,11 @@
 body {
-    background-color: #291692;
+    background:linear-gradient(120deg, #c7b8b8 0%, #291692 100%);
 }
 
 header {
-    background-color: #c7b8b8;
+    background:linear-gradient(120deg, #c7b8b8 0%, #291692 100%);
     font-family: 'Calibri', sans-serif;
-    color: #291692;
+    color: #f8f8fd;
     font-size: 50px;
     text-align: center;
     padding: 10px;
