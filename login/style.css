@@ -1,6 +1,6 @@
 body {
   display: flex;
-  background:linear-gradient(120deg, blue 0%, orange 100%);
+  background:linear-gradient(120deg, red 0%, cyan 100%);
   text-align: center;
   justify-content: center;
 }
@@ -14,7 +14,7 @@ h1 {
 .login {
     text-align: center;
     border-radius: 50px;
-    background-color: cyan;
+    background-color: whitesmoke;
     margin: 150px;
     padding: 100px;
     width: 300px;

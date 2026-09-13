@@ -1,0 +1,91 @@
+body {
+    background-color: #291692;
+}
+
+header {
+    background-color: #c7b8b8;
+    font-family: 'Calibri', sans-serif;
+    color: #291692;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+
+.left_navbar {
+    display: flex;
+    border-radius: 50px;
+    padding: 10px;
+    align-self: left;
+}
+
+.right_navbar {
+    display: flex;
+    border-radius: 50px;
+    padding: 10px;
+    align-self: right;
+}
+
+#links {
+  display: block;
+  color: rgb(241, 237, 237);
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#links:hover {
+    background-color: #291692;
+    border-radius: 10px;
+}
+
+.imagem_massa {
+    display: flex;
+    justify-content: left;
+}
+
+#imagem_edit {
+    display: flex;
+    border-radius: 15%;
+}
+
+#ingredientes {
+    background-color: #c7b8b8;
+    font-family: 'Calibri', sans-serif;
+    color: #291692;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#passos {
+    background-color: #c7b8b8;
+    font-family: 'Calibri', sans-serif;
+    color: #291692;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
