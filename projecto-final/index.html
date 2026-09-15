@@ -205,48 +205,42 @@
         </section>
     
     <section id="contact" class="contact-section">
-        <div class="landing_page">
-  <div class="responsive-container-block big-container">
-    <img class="bg-img" id="iq5bf" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/clothes-bg.png">
-    <div class="responsive-container-block container">
-      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
-        <div class="content-box">
-          <p class="text-blk section-head">
-            Reach me
-          </p>
-          <p class="text-blk section-subhead">
-            Be free to contact me if you want to know more about me!<br>
-            Let's discuss future collaborations and how we can work together :)
-          </p>
+
+        <div class="contact-intro">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-description">
+            Feel free to contact if you want to collaborate!<br><br>
+            Let's talk about future projects and how we can work together ;)
+            </p>
         </div>
-      </div>
-      <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
-        <form class="form-box">
-          <div class="container-block form-wrapper">
-            <p class="text-blk contactus-head">
-              <a class="link" href="">
-              </a>
-              Get a quote
-            </p>
-            <p class="text-blk contactus-subhead">
-              We will get back to you in 24 hours
-            </p>
-            <div class="responsive-container-block">
-                <input class="input" id="ijowk-7" name="FirstName" placeholder="First Name">
-                <input class="input" id="indfi-5" name="Last Name" placeholder="Last Name">
-                <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
-                <input class="input" id="imgis-6" name="PhoneNumber" placeholder="Phone Number">
-                <textarea aria-placeholder="Type message here" class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+            <input type="hidden" name="from_name" value="My Website" />
+            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+            <div class="form-group-container">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input id="phone" name="phone" class="form-input" placeholder="+351 911 111 111" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+                </div>
             </div>
-            <button class="submit-btn">
-              Get quote
-            </button>
-          </div>
+                <button class="form-submit" type="submit">Send Message</button>
         </form>
-      </div>
-    </div>
-  </div>
-</div>
     </section>
 
     <footer>
