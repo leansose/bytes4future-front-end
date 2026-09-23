@@ -41,7 +41,8 @@
 /* Aplica o comportamento de scroll suave e a margem de segurança para a navbar fixa */
 html {
     scroll-behavior: smooth;
-    /* Faz a transição de clique no menu ser suave */
+    container-type: scroll-state;
+    container-name: scroller;
 }
 
 section[id] {
@@ -69,6 +70,33 @@ section:last-of-type {
     padding: 0 30px;
 }
 
+.to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.to-top img {
+    width: 45px;  
+    height: 45px;
+    display: block;
+}
+
+.to-top:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(-4px);
+    transition: opacity 0.3s ease;
+}
 
 /* =========================
    COMMON COMPONENT STYLE
@@ -238,30 +266,42 @@ h4 {
 
 nav {
     position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     padding: 10px 20px;
     box-sizing: border-box;
+
+    background-color: var(--background);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-qa {
+    font-size: var(--font-sm);
+    font-weight: 600;
+}
+
+.tag-color {
+    color: var(--accent);
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 
     font-size: var(--font-sm);
     font-weight: 600;
 
     list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-
-    border-radius: var(--border-radius);
-
-    max-width: 2100px;
-    width: 100%;
+    width: fit-content
 }
 
 nav ul li a {
@@ -276,6 +316,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: var(--background);
     border-radius: var(--border-radius);
+    border: 1px solid var(--border);
 }
 
 
@@ -713,6 +754,10 @@ nav ul li a:hover {
     padding: 20px;
 }
 
+.education-section .container {
+    max-width: 1300px;
+}
+
 /* FEUP */
 
 .course-info {
@@ -868,7 +913,7 @@ nav ul li a:hover {
 
 
 /* =========================
-   TIMELINE - WORK EXPERIENCE (A LINHA VERTICAL CONTÍNUA)
+   TIMELINE - WORK EXPERIENCE
 ========================= */
 
 .timeline-section .container {
@@ -1043,7 +1088,7 @@ nav ul li a:hover {
 
     font-size: var(--font-section);
     font-weight: 700;
-    
+
     margin: 0 0 40px;
     text-align: center;
 }
@@ -1315,7 +1360,7 @@ nav ul li a:hover {
 ========================= */
 
 footer {
-    margin-top: 30px;
+    margin-top: 250px;
     background: var(--background);
 }
 
@@ -1324,6 +1369,8 @@ footer .container {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
 }
 
 footer .social-links {
@@ -1332,7 +1379,7 @@ footer .social-links {
 }
 
 footer .social-links a {
-    
+
     color: var(--text-light);
     text-decoration: none;
 
