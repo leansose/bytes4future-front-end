@@ -21,7 +21,7 @@
     --text-subtle: #71717a;
 
     --border: #3f3f46;
-    --accent: #a78bfa;
+    --accent: #55b9ff;
 
     /* Typography */
     --font-xs: 12px;
@@ -38,7 +38,6 @@
     --text-spacing: 2;
 }
 
-/* Aplica o comportamento de scroll suave e a margem de segurança para a navbar fixa */
 html {
     scroll-behavior: smooth;
     container-type: scroll-state;
@@ -47,7 +46,6 @@ html {
 
 section[id] {
     scroll-margin-top: 100px;
-    /* Altere este valor para bater certo com a altura da sua navbar + um pequeno respiro */
 }
 
 section {
@@ -86,7 +84,7 @@ section:last-of-type {
 }
 
 .to-top img {
-    width: 45px;  
+    width: 45px;
     height: 45px;
     display: block;
 }
@@ -114,13 +112,11 @@ section:last-of-type {
 ========================= */
 
 body {
-    /* background-image: url(backgrounds/fundo3.jpg); */
-
+    /*background-image: url(backgrounds/fundo3.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
     background-attachment: fixed;
-
     font-family: "Inter", sans-serif;
     font-size: var(--font-md);
     color: var(--text-light);
@@ -141,7 +137,7 @@ h4 {
 
 .section-description {
     font-size: var(--font-lg);
-    line-height: 1.6;
+    line-height: var(--text-spacing);
     color: var(--text-light);
 }
 
@@ -150,114 +146,64 @@ h4 {
 ========================= */
 
 .hero {
-    opacity: 0.9;
-    padding: 100px 30px;
+    padding: 50px 30px;
     margin: 0 auto;
+    background-image: url(backgrounds/waves2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
 }
 
-
-/* Main layout */
+.hero .container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 300px 30px;
+}
 
 .hero-content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-    color: var(--text-light);
-}
-
-
-/* =========================
-   LEFT SIDE
-========================= */
-
-.hero-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
-
-.hero-text h1 {
-    font-size: var(--font-xl);
-    font-weight: 600;
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 100px;
+    color: var(--accent);
     margin: 0 0 20px;
 }
 
-
 .hero-description {
-    font-size: var(--font-sm);
-    font-family: "Inter", sans-serif;
     margin: 0 0 30px;
-    color: var(--text-light);
 }
 
 
-/* =========================
-   SOCIAL LINKS
-========================= */
+/* SOCIAL LINKS */
 
 .hero .social-links {
     display: flex;
     gap: 20px;
 }
 
-
 .hero .social-links a {
     display: block;
     width: 45px;
     height: 45px;
     transition: transform 0.25s ease;
+    opacity: 0.8;
 }
-
 
 .hero .social-links a:hover {
     transform: translateY(-4px);
+    opacity: 1;
 }
-
 
 .hero .social-links img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-
-/* =========================
-   RIGHT SIDE
-========================= */
-
-.hero-image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 420px;
-}
-
-
-/* White circle */
-
-.big-circle {
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    background-color: var(--text-light);
-    border-radius: 50%;
-}
-
-
-/* Profile photo */
-
-.my-photo {
-    position: relative;
-    z-index: 1;
-    width: 230px;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 /* =========================
@@ -266,14 +212,12 @@ h4 {
 
 nav {
     position: fixed;
-
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     padding: 10px 20px;
     box-sizing: border-box;
-
     background-color: var(--background);
     font-family: "Josefin Sans", sans-serif;
 }
@@ -286,7 +230,7 @@ nav .container {
 
 .logo-qa {
     font-size: var(--font-sm);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .tag-color {
@@ -296,10 +240,7 @@ nav .container {
 nav ul {
     display: flex;
     justify-content: flex-end;
-
-    font-size: var(--font-sm);
-    font-weight: 600;
-
+    font-weight: 700;
     list-style-type: none;
     width: fit-content
 }
@@ -307,6 +248,7 @@ nav ul {
 nav ul li a {
     display: block;
     color: var(--text-light);
+    font-size: var(--font-sm);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -324,18 +266,16 @@ nav ul li a:hover {
    MAIN SECTIONS
 ========================= */
 
-/* HOME SECTION */
+/* ABOUT ME SECTION */
 
 .home-section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 225px 50px 225px;
 }
 
 .home-section .title {
-    font-weight: bold;
-    color: var(--text-light);
     margin-bottom: 20px;
     font-size: var(--font-section);
     font-weight: 700;
@@ -360,7 +300,6 @@ nav ul li a:hover {
 .skills-section {
     padding: 100px;
 }
-
 
 /* HEADER */
 
@@ -387,9 +326,7 @@ nav ul li a:hover {
 .section-description {
     font-size: var(--font-md);
     font-weight: 400;
-
     max-width: 600px;
-
     margin: 0 auto;
     line-height: var(--text-spacing);
 }
@@ -401,14 +338,13 @@ nav ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: start;
+    width: 1400px;
 }
-
 
 /* SKILL CARD */
 
 .skill-card {
     background-color: var(--card-background);
-    opacity: 0.9;
     border: 1px solid var(--border);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -417,15 +353,12 @@ nav ul li a:hover {
         box-shadow 0.25s ease;
 }
 
-
-
 .skill-card:hover {
     transform: translateY(-4px);
-    border-color: var(--border);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--text-light);
 }
 
-/* Soft Skills Grid */
+/* Soft Skills Grid Position */
 
 .soft-skills {
     grid-column: 2;
@@ -436,16 +369,12 @@ nav ul li a:hover {
 
 .skill-card summary {
     display: grid;
-
     grid-template-columns: auto 1fr auto auto;
     align-items: center;
     gap: 14px;
-
     padding: 22px;
-
     cursor: pointer;
     list-style: none;
-
     font-family: "Inter", sans-serif;
     color: var(--text-light);
 }
@@ -454,24 +383,20 @@ nav ul li a:hover {
     display: none;
 }
 
-
 .skill-icon {
     font-size: var(--font-md);
     line-height: 0.5;
 }
-
 
 .skill-title {
     font-size: var(--font-md);
     font-weight: 600;
 }
 
-
 .skill-count {
     font-size: var(--font-sm);
     opacity: 0.8;
 }
-
 
 .skill-arrow {
     font-size: var(--font-sm);
@@ -480,31 +405,25 @@ nav ul li a:hover {
     line-height: 2;
 }
 
-
 /* Arrow animation */
 
 .skill-card[open] .skill-arrow {
     transform: rotate(45deg);
 }
 
-
 /* Content */
 
 .skill-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-
+    gap: 10px;
     padding: 0 22px 22px;
 }
 
-
 .skill-content span {
     padding: 7px 11px;
-
     border: 1px solid var(--border);
     border-radius: 6px;
-
     font-size: var(--font-sm);
     background-color: var(--background-dark);
     color: var(--text-light);
@@ -775,12 +694,12 @@ nav ul li a:hover {
 
 .course-header .course-period {
     margin: 0;
-    color: #8A1538;
+    color: var(--text-light);
     font-size: var(--font-sm);
     font-weight: 600;
     letter-spacing: 1px;
 
-    border: 2px solid #8A1538;
+    border: 1px solid var(--text-light);
     width: fit-content;
     padding: 5px 10px;
 }
@@ -1080,7 +999,6 @@ nav ul li a:hover {
     padding: 50px;
 }
 
-
 /* SECTION TITLE */
 
 .music-section .section-title {
@@ -1108,14 +1026,12 @@ nav ul li a:hover {
     gap: 15px;
 }
 
-
 /* GALLERY */
 
 .music-gallery {
     display: flex;
     justify-content: center;
 }
-
 
 /* CAROUSEL */
 
@@ -1124,13 +1040,11 @@ nav ul li a:hover {
     padding-top: 75px;
 }
 
-
 /* Hide radio buttons */
 
 .carousel input[type="radio"] {
     display: none;
 }
-
 
 /* Carousel slides */
 
@@ -1139,14 +1053,12 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-
 /* Hide all slides */
 
 .slide {
     display: none;
     width: 800px;
 }
-
 
 /* Show selected slide */
 
@@ -1159,7 +1071,6 @@ nav ul li a:hover {
     display: block;
 }
 
-
 /* IMAGES */
 
 .bandimg img {
@@ -1170,10 +1081,7 @@ nav ul li a:hover {
     border-radius: var(--border-radius);
 }
 
-
-/* =========================
-   SLIDE INFORMATION
-========================= */
+/* SLIDE INFORMATION */
 
 .slide-info {
     margin-top: 8px;
@@ -1193,10 +1101,7 @@ nav ul li a:hover {
     font-weight: 400;
 }
 
-
-/* =========================
-   CAROUSEL DOTS
-========================= */
+/* CAROUSEL DOTS */
 
 .carousel-dots {
     display: flex;
@@ -1205,18 +1110,13 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
-
 .dot {
     width: 8px;
     height: 8px;
-
     border-radius: 50%;
-
     background-color: #777;
-
     cursor: pointer;
 }
-
 
 /* Active dot */
 
@@ -1240,9 +1140,6 @@ nav ul li a:hover {
     margin: 0 auto;
     text-align: justify;
 }
-
-
-/* Push links to the bottom */
 
 .band-links {
     display: flex;
@@ -1291,7 +1188,6 @@ nav ul li a:hover {
 .form-group {
     display: flex;
     flex-direction: column;
-    border-radius: var(--border-radius);
 }
 
 .form-label {
@@ -1309,8 +1205,7 @@ nav ul li a:hover {
     height: 2.5rem;
     width: 100%;
     border-radius: var(--border-radius);
-    font-size: 0.875rem;
-    line-height: var(--text-spacing);
+    font-size: var(--font-sm);
 }
 
 .form-input::placeholder,
@@ -1326,10 +1221,10 @@ nav ul li a:hover {
 .form-textarea:focus-visible {
     outline: 1px solid var(--text-light);
     outline-offset: 2px;
+    color: #111111;
     font-size: var(--font-sm);
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    color: var(--text-muted);
 }
 
 .form-textarea {
@@ -1340,7 +1235,7 @@ nav ul li a:hover {
 .form-submit {
     width: 100%;
     margin-top: 1.2rem;
-    background-color: var(--background-dark);
+    background-color: var(--background);
     font-size: var(--font-md);
     font-family: "Josefin Sans", sans-serif;
     color: var(--text-light);
@@ -1350,8 +1245,6 @@ nav ul li a:hover {
 }
 
 .form-submit:hover {
-    background-color: #111111;
-    border-radius: var(--border-radius);
     border: 1px solid var(--text-light);
 }
 
@@ -1360,17 +1253,15 @@ nav ul li a:hover {
 ========================= */
 
 footer {
-    margin-top: 250px;
-    background: var(--background);
+    margin-top: 275px;
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 30px;
-    border: 1px solid var(--border);
-    border-radius: var(--border-radius);
+    border-top: 2px solid var(--border);
+    background-color: var(--background);
 }
 
 footer .social-links {
@@ -1378,22 +1269,19 @@ footer .social-links {
     gap: 20px;
 }
 
-footer .social-links a {
-
-    color: var(--text-light);
-    text-decoration: none;
-
-}
-
 footer .social-links img {
     width: 30px;
     height: 30px;
 }
 
+footer .social-links a:hover {
+    transform: translateY(-4px);
+}
+
 footer .contact-info {
     display: flex;
+    gap: 25px;
     font-family: "Josefin Sans", sans-serif;
-    gap: 20px;
 }
 
 /* FONTS */
