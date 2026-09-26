@@ -24,7 +24,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education & Certifications</a></li>
                 <li><a href="#timeline">Work Experience</a></li>
-                <li><a href="#music">Hoobie</a></li>
+                <li><a href="#music">Music</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -66,7 +66,7 @@
                 <p class="about-me-text">
                     I have also some personal projects documented on a portfolio using Playwright and Selenium. It's my
                     introduction into automation testing. That's one of my goals as a QA Tester, becoming a Test
-                    Automation Engineer.<br>
+                    Automation Engineer.<br><br>
                     I'm a focused, detail-oriented person looking forward to be a part of a development team to grow as
                     tester while helping a company to deliver a better product.
                 </p>
@@ -628,175 +628,144 @@
         <!-- MUSIC SECTION -->
         <section id="music" class="music-section">
 
+            <h2 class="section-title">Music</h2>
+
             <div class="container">
 
-                <h2 class="section-title">Hobbie</h2>
+                <div class="image-thumbnail-carousel">
+                    <div class="image-display">
+                        <div class="screen"></div>
+                    </div>
 
-                <div class="music-grid">
+                    <div class="display-info">
+                        <p class="concert-venue"></p>
+                        <p class="photographer"></p>
+                    </div>
 
-                    <!-- LEFT: Photo carousel -->
-                    <div class="music-gallery">
-
-                        <div class="carousel">
-
-                            <!-- Carousel controls -->
-                            <input type="radio" name="carousel" id="slide1" checked>
-                            <input type="radio" name="carousel" id="slide2">
-                            <input type="radio" name="carousel" id="slide3">
-                            <input type="radio" name="carousel" id="slide4">
-                            <input type="radio" name="carousel" id="slide5">
-                            <input type="radio" name="carousel" id="slide6">
-
-                            <!-- Slides -->
-                            <div class="carousel-slides">
-
-                                <div class="slide">
-                                    <div class="bandimg">
-                                        <img src="band/1.jpg" alt="Post-Amplifest Session 2014">
-                                    </div>
-
+                    <div class="thumbnail-carousel">
+                        <button type="button" class="carousel__btn prev" aria-label="Previous slide">
+                            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                            </svg>
+                        </button>
+                        <ul class="carousel__slider">
+                            <li class="carousel__slide">
+                                <div class="thumbnail">
+                                    <img loading="lazy" src="band/1.jpg" alt="pre-amplifest">
                                     <div class="slide-info">
                                         <p class="concert-venue">@ Post-Amplifest Session 2014</p>
                                         <p class="photographer">Photo by Maria do Carmo Louceiro</p>
                                     </div>
                                 </div>
-
-                                <div class="slide">
-                                    <div class="bandimg">
-                                        <img src="band/2.jpg" alt="Amplifest 2015">
-                                    </div>
-
+                            </li>
+                            <li class="carousel__slide">
+                                <div class="thumbnail">
+                                    <img loading="lazy" src="band/2.jpg" alt="amplifest">
                                     <div class="slide-info">
                                         <p class="concert-venue">@ Amplifest 2015</p>
                                         <p class="photographer">Photo by Lais Pereira</p>
                                     </div>
                                 </div>
-
-                                <div class="slide">
-                                    <div class="bandimg">
-                                        <img src="band/3.jpg" alt="Amplifest 2015">
-                                    </div>
-
+                            </li>
+                            <li class="carousel__slide">
+                                <div class="thumbnail">
+                                    <img loading="lazy" src="band/3.jpg" alt="amplifest">
                                     <div class="slide-info">
                                         <p class="concert-venue">@ Amplifest 2015</p>
                                         <p class="photographer">Photo by Lais Pereira</p>
                                     </div>
                                 </div>
-
-                                <div class="slide">
-                                    <div class="bandimg">
-                                        <img src="band/4.JPG" alt="Barracuda 2020">
-                                    </div>
-
+                            </li>
+                            <li class="carousel__slide">
+                                <div class="thumbnail">
+                                    <img loading="lazy" src="band/4.jpg" alt="barracuda">
                                     <div class="slide-info">
                                         <p class="concert-venue">@ Barracuda 2020</p>
                                         <p class="photographer">Photo by Pedro Sousa</p>
                                     </div>
                                 </div>
-
-                                <div class="slide">
-                                    <div class="bandimg">
-                                        <img src="band/5.jpg" alt="Ferro Bar 2019">
-                                    </div>
-
+                            </li>
+                            <li class="carousel__slide">
+                                <div class="thumbnail">
+                                    <img loading="lazy" src="band/5.jpg" alt="ferro bar">
                                     <div class="slide-info">
                                         <p class="concert-venue">@ Ferro Bar 2019</p>
                                         <p class="photographer">Photo by David Madeira</p>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                        <button type="button" class="carousel__btn next" aria-label="Next slide">
+                            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-                                <div class="slide">
-                                    <div class="bandimg">
-                                        <img src="band/line6.jpg" alt="effects pedals">
-                                    </div>
+                <div class="music-info">
 
-                                    <div class="slide-info">
-                                        <p class="concert-venue">Exploratory Music</p>
-                                        <p class="photographer">Photo by Leandro Sousa Bastos</p>
-                                    </div>
-                                </div>
+                    <div class="music-description">
 
-                            </div>
+                        <p class="section-label">ABOUT MY MUSIC EXPERIENCE</p>
 
-                            <!-- Carousel dots -->
-                            <div class="carousel-dots">
+                        <p>
+                            I'm a founding member and guitarist of the Portuguese post-rock/metal
+                            band JUSEPH since 2010.
+                        </p>
 
-                                <label for="slide1" class="dot"></label>
-                                <label for="slide2" class="dot"></label>
-                                <label for="slide3" class="dot"></label>
-                                <label for="slide4" class="dot"></label>
-                                <label for="slide5" class="dot"></label>
-                                <label for="slide6" class="dot"></label>
+                        <p>
+                            Over the years, my band released two studio albums —
+                            <em>Novae</em> (2013) and <em>Óreida</em> (2019) — and played
+                            numerous live shows across the country, including the legendary music festival,
+                            Amplifest on 2015 edition.
+                        </p>
 
-                            </div>
+                        <p>
+                            JUSEPH is currently on an unannounced hiatus, having played
+                            their final show in 2020 during pandemic; it was a livestream act at the
+                            now-defunct
+                            rock club Barracuda.
+                        </p>
 
-                        </div>
+                        <p>
+                            Whether this ship will set sail on new sonic journeys remains
+                            uncertain, but we never know.
+                        </p>
+
+                        <p>
+                            Today I'm challenging myself to play exploratory music, since I'm very addicted
+                            to
+                            electronic music,
+                            effects and syntherizers. I'm trying to find a balance between the two, possibly
+                            a
+                            mix of both, my grounded area, post-rock, and ambient music, using an alter ego
+                            called,
+                            <em>Sir Sun</em>.
+                        </p>
 
                     </div>
 
+                    <div class="band-links">
 
-                    <!-- RIGHT: Information + links -->
-                    <div class="music-info">
+                        <!-- links later -->
 
-                        <div class="music-description">
+                        <a href="https://jusephband.bandcamp.com/" target="_blank">
+                            <img src="icons/bandcamp-logo.png" alt="bandcamp" width="200px" height="55px">
+                        </a>
 
-                            <p class="section-label">ABOUT MY MUSIC EXPERIENCE</p>
+                        <a href="https://open.spotify.com/artist/7vQVtlsTukTFCInKzmi1zd?si=b15KyNgKT4CwuLTGu_UI6g"
+                            target="_blank">
+                            <img src="icons/spotify-logo.png" alt="spotify" width="120px" height="35px">
+                        </a>
 
-                            <p>
-                                I'm a founding member and guitarist of the Portuguese post-rock/metal
-                                band JUSEPH since 2010.
-                            </p>
-
-                            <p>
-                                Over the years, my band released two studio albums —
-                                <em>Novae</em> (2013) and <em>Óreida</em> (2019) — and played
-                                numerous live shows across the country, including the legendary music festival,
-                                Amplifest on 2015 edition.
-                            </p>
-
-                            <p>
-                                JUSEPH is currently on an unannounced hiatus, having played
-                                their final show in 2020 during pandemic; it was a livestream act at the
-                                now-defunct
-                                rock club Barracuda.
-                            </p>
-
-                            <p>
-                                Whether this ship will set sail on new sonic journeys remains
-                                uncertain, but we never know.
-                            </p>
-
-                            <p>
-                                Today I'm challenging myself to play exploratory music, since I'm very addicted
-                                to
-                                electronic music,
-                                effects and syntherizers. I'm trying to find a balance between the two, possibly
-                                a
-                                mix of both, my grounded area, post-rock, and ambient music, using an alter ego
-                                called,
-                                <em>Sir Sun</em>.
-                            </p>
-
-                        </div>
-
-                        <div class="band-links">
-
-                            <!-- links later -->
-
-                            <a href="https://jusephband.bandcamp.com/" target="_blank">
-                                <img src="icons/bandcamp-logo.png" alt="bandcamp" width="200px" height="55px">
-                            </a>
-
-                            <a href="https://open.spotify.com/artist/7vQVtlsTukTFCInKzmi1zd?si=b15KyNgKT4CwuLTGu_UI6g"
-                                target="_blank">
-                                <img src="icons/spotify-logo.png" alt="spotify" width="120px" height="35px">
-                            </a>
-
-                            <a href="https://www.instagram.com/jusephband/" target="_blank">
-                                <img src="icons/ig-icon.png" alt="instagram" width="50px" height="50px">
-                            </a>
-
-                        </div>
+                        <a href="https://www.instagram.com/jusephband/" target="_blank">
+                            <img src="icons/ig-icon.png" alt="instagram" width="50px" height="50px">
+                        </a>
 
                     </div>
 
@@ -853,6 +822,8 @@
         <!-- BACK TO TOP -->
 
         <a class="to-top" href="#top" aria-label="back to top""><img src=" icons/totop.webp"></a>
+
+        <script src="script.js"></script>
 </body>
 
 <!-- FOOTER -->
