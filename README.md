@@ -2,16 +2,17 @@
 
 A personal portfolio website developed as the final project of the **Bytes4Future PowerUp** frontend course.
 
-The project presents my background, technical skills, musical experience, and development projects, with a focus on clean structure, responsive layouts, and interactive UI elements.
+The project presents my background, technical skills, musical experience, and development projects, with a focus on semantic HTML, reusable CSS, structured layouts, and progressive JavaScript enhancements.
 
 ## Current Sections
 
-- **About Me:** Personal information.
-- **Header:** Introduction and profile.
+- **Header:** Header: Introduction, profile, social links, and contact CTA.
 - **Navigation:** Navigation bar with links to sections.
+- **About Me:** Personal information.
 - **Skills:** Technical skills organized into expandable cards.
+- **Projects:** Testing and other projects showcasing technologies, tools, and methodologies.
+- **Work Experience** vertical timeline aligned with job title, company, and period
 - **Music:** Musical background, band information, photo carousel, and external links.
-- **Projects:** Planned section to showcase testing projects, technologies, and methodologies. // WIP
 - **Contact:** Contact form integrated with Web3Forms.
 - **Footer:** Social links and contact information.
 
@@ -19,26 +20,34 @@ The project presents my background, technical skills, musical experience, and de
 
 - HTML5
 - CSS3
-- Google Fonts / locally hosted fonts
+- Locally hosted fonts
 - Web3Forms for contact form submissions
 
 ## Current Implementation
 
+- Semantic HTML structure for page sections and content.
 - Reusable CSS classes for shared styling and layout.
 - CSS Grid and Flexbox for page and component layouts.
-- Expandable skill cards using HTML `<details>` and `<summary>`.
-- CSS-only photo carousel using radio buttons, labels, and `:checked` selectors.
-- Native HTML form validation using input types and attributes such as `required` and `pattern`.
+- CSS custom properties for reusable values such as colors, typography, spacing, and sizing.
+- Custom locally hosted fonts using @font-face.
+- Expandable skill cards using HTML <details> and <summary>.
+- Native HTML form validation using input types and attributes such as required and pattern.
+
+## Current Javascript Implementation
+- Interactive photo carousel with thumbnail selection, previous/next navigation, and keyboard controls.
+- Dynamic main image and photo information updates based on the selected slide.
+- Back to top button displayed after scrolling past a defined threshold.
 
 ## Development Approach
 
-The project is being developed with an **HTML-first and CSS-first approach**, focusing on semantic structure, reusable styles, and layout fundamentals before introducing JavaScript.
+The project is being developed with an **HTML-first and CSS-first approach**, focusing on semantic structure, reusable styles and layout fundamentals before introducing JavaScript.
 
-JavaScript will be considered later for enhancements such as improved interactions, form feedback, and additional UI behavior.
+JavaScript is being introduced progressively after establishing the HTML and CSS foundations, focusing on purposeful interactions rather than adding unnecessary complexity.
 
 ## Next Steps
 
-- Build the Projects section with expandable project cards.
-- Improve responsive behavior across screen sizes.
-- Add JavaScript enhancements where appropriate.
-- Review accessibility, layout consistency, and overall polish.
+- Improve responsive behavior across different screen sizes.
+- Continue refining JavaScript interactions where appropriate.
+- Review accessibility and keyboard navigation.
+- Improve layout consistency and visual polish.
+- Perform final cross-browser and usability checks.

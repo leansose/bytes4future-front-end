@@ -61,10 +61,10 @@ section:last-of-type {
 /* =========================
    TO TOP BUTTON
 ========================= */
-.to-top {
+#back-to-top {
     position: fixed;
-    bottom: 80px;
-    right: 150px;
+    bottom: 150px;
+    right: 115px;
     width: 50px;
     height: 50px;
     background-color: var(--text-light);
@@ -73,16 +73,20 @@ section:last-of-type {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
-.to-top img {
+#back-to-top.hidden {
+    display: none;
+}
+
+#back-to-top img{
     width: 45px;
     height: 45px;
     display: block;
 }
 
-.to-top:hover {
+#back-to-top:hover {
     opacity: 1;
     cursor: pointer;
     transform: translateY(-4px);

@@ -1,3 +1,5 @@
+// PHOTO CAROUSEL
+
 const Carousel = (() => {
     const getActiveSlide = () =>
         document.querySelector(".carousel__slide.active");
@@ -118,3 +120,11 @@ const Carousel = (() => {
 
     initCarousel();
 })();
+
+// BACK TO TOP BUTTON
+
+const mybutton = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+    mybutton.classList.toggle("hidden", window.scrollY <= 300);
+});
