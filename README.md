@@ -30,7 +30,7 @@ The project presents my background, technical skills, musical experience, and de
 - CSS Grid and Flexbox for page and component layouts.
 - CSS custom properties for reusable values such as colors, typography, spacing, and sizing.
 - Custom locally hosted fonts using @font-face.
-- Expandable skill cards using HTML <details> and <summary>.
+- Expandable skill cards using HTML details and summary tags.
 - Native HTML form validation using input types and attributes such as required and pattern.
 
 ## Current Javascript Implementation
